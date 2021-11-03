@@ -8,8 +8,6 @@ int main() {
     int m;
     cout << "Divide with: ";
     cin >> m;
-	
-    //your code goes here
 
 do {
 	int k = n % m;

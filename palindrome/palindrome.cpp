@@ -16,19 +16,19 @@ bool isPalindrome(int x) {
 int main() {
 	
     int n;
-    cout << "Palindrome?: ";
-    cin >>n;
+	cout << "Enter an integer: ";
+    cin>>n;
     
     if(isPalindrome(n)) {
         cout <<n<<" is a palindrome" << endl;
     }
     else {
-        cout <<n<<" is NOT a palindrome" << endl;
+        cout <<n<<" is not a palindrome" << endl;
     }
     
     char c;
     cout << "Terminate?(y/n): ";
-    cin >> c;
+    cin>>c;
     char terminate = c;
     
     switch (terminate) {	

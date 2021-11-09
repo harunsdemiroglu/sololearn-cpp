@@ -15,10 +15,17 @@ bool isPalindrome(int x) {
 }
 
 int main() {
-	string st = "y, n";
-	cout << "Start?(y/n): " ;
+	string st;
+	cout << "Start?(y/n): " ;	
 	cin >> st;
 	
+	while (!(st == "y" || st == "n")) {
+		cout << "Error: Invalid character." << endl;
+		cout << "Please type y or n: ";
+		cin >> st;
+		cin.clear();
+		cin.ignore(123, '\n');
+	}
 	while (st == "y" && st != "n"){
 	    int n;
 		cout << "Enter an integer: ";
@@ -41,6 +48,13 @@ int main() {
 	    	}
 	    	cout << "Continue?(y/n): ";
 	    	cin >> st;
+	    	while (!(st == "y" || st == "n")) {
+				cout << "Error: Invalid character." << endl;
+				cout << "Please type y or n: ";
+				cin >> st;
+				cin.clear();
+				cin.ignore(123, '\n');
+			}
 		}
 	}
 	return 0;
